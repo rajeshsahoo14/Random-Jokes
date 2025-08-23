@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.joke-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.joke-card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 420px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  backdrop-filter: blur(10px);
+}
+
+.joke-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #222;
+  font-size: 1.8rem;
+}
+
+.joke-btn {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(37, 117, 252, 0.4);
+}
+
+.joke-btn:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(37, 117, 252, 0.6);
+}
+
+.joke-content {
+  margin-top: 25px;
+  font-size: 1.3rem;
+  color: #333;
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.setup {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.punchline {
+  font-style: italic;
+  color: #0077ff;
+}
+
+.placeholder {
+  color: #555;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
