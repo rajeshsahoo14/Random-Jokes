@@ -1,4 +1,4 @@
-# 🎭 Random Joke Generator (React + Vite) 
+# 🎭 Random Joke Generator 
 
 A simple React app that fetches random jokes from the [Official Joke API](https://official-joke-api.appspot.com/) and displays them with one click. 
 
