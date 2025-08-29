@@ -20,7 +20,7 @@ A simple React app that fetches random jokes from the [Official Joke API](https:
 ---
 
 ## 📸 Demo
-Try It own your own now i will soon be updating with screenshots.Thanks:)
+Try It own your own now i will soon be updating with screenshots.Thanks:) & Enjoy!
 
 ---
 
